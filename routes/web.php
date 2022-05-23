@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 //use Illuminate\Support\Facades\LaravelLocalization;
 //use Mcamara\LaravelLocalization\LaravelLocalization;
-use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+//use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 //use Mcamara\LaravelLocalization;
 //use Mcamara\LaravelLocalization\LaravelLocalization;
@@ -128,7 +128,7 @@ Route::get('/dashboard', function(){
 
 Route::get('fillable', 'CrudController@getOffer');
 
-Route::group(['prefix' => LaravelLocalization::setLocale(),'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]], function(){
+/*Route::group(['prefix' => LaravelLocalization::setLocale(),'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]], function(){
 Route::group(['prefix'=>'offers'],function(){
    // Route::get('store', 'CrudController@store');
  //  Route::group(['prefix' => LaravelLocalization::setLocale(),'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]], function(){
@@ -148,4 +148,5 @@ Route::group(['prefix'=>'offers'],function(){
 
 
 });
+*/
 

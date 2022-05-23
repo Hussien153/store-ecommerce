@@ -20,7 +20,7 @@
                 <div class="card mb-2">
                     <img src="{{ $product->image }}" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">"{{ $product->title }}"</h5>
+                      <h5 class="card-title">"{{ $product->title_.app() -> getLocale() }}"</h5>
                       <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
                       <p class="card-text">Sld on thd make up the bulk of the card's content.</p>
                       <a href="#" class="btn btn-primary">Buy</a>
